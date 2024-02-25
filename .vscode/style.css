@@ -42,7 +42,8 @@ body {
 }
 
 #conteudo {
-  width: 360px;
+  width: 100%; /*o conteúdo vai cobrir a largura máxima da tela, até o lime máximo abaixo, de 588 pixels*/
+  max-width: 588px;
   margin: 56px auto; /*coloca 56px de espaçamento no topo*/ /*centraliza o "Conteudo"no centro da tela; "auto"maticamente ele faz um calculo e faz as margens laterais na mesma medida/distancia*/
   padding: 0 24px; /*do espaço do width, 24 pixels são dos ptrrenchimentos laterais*/
 }
