@@ -88,11 +88,16 @@ body {
   /*um truque matemático: o botão não está alinhado a barrinha (span), então top: 50%, obriga ele a ficar esse tanto porcento acima da barra, e com "tranform..." o obrigamos a descer essa quantidade, assim alinhando o botton à barrinha*/
   top: 50%;
   transform: translateY(-50%);
+
+  animation: deslizamentoVolta 0.4s; /*a animação do keiframe lá em baixo será de 4 seg.*/
 }
 
 .branco #botão button {
-  right: 0; /*coloca o button na posição 0 do lado direito; totalmente no canto do lado direito*/
-  left: initial; /*é necessário*/
+  animation: deslizamento 0.4s forwards; /*a animação do keiframe lá em baixo será de 4 seg*/ /*forwards diz para o css manter as propriedades, assim o botão não fica voltando*/
+}
+
+#botão button:hover { /*hover é a função que o seu conteúdo só funcina quando passa o mouse por cima do elemento*/
+  outline: 8px solid var(--fundoLI); /*uma borda aparecerá em volta do botão*/
 }
 
 #botão span {
@@ -104,9 +109,7 @@ body {
   background: var(--fundoLI);
   border: 1px solid var(--bordaLI);
   backdrop-filter: blur(4px); /*bLur é "embaçar"*/
-  -webkit-backdrop-filter: blur(
-    4px
-  ); /*o "-webkit..." serve para ativar/permitir o backdrop-filter em alguns aparelhos*/
+  -webkit-backdrop-filter: blur(4px); /*o "-webkit..." serve para ativar/permitir o backdrop-filter em alguns aparelhos*/
 }
 
 ul {
@@ -139,7 +142,6 @@ ul li a {
 }
 
 ul li a:hover {
-  /*hover é a função que o conteúdo só funcina quando passa o mouse por cima do elemento, no caso o UL LI A*/
   background: var(--funfoLI-hover);
   border: 1.5px solid var(--texto);
 }
@@ -173,4 +175,22 @@ footer {
   .branco {
    --fundo: url(./assets/bg-desktop-light.jpg);
   }
+}
+
+@keyframes deslizamento { /*keiframes colocas animações*/
+  /*abaixo vemos animações para o botão, assim ele poderá deslizar suaviamente de uma ponta a outra*/
+  from {
+    left: 0;   
+  }
+  to {
+    left: 52%;
+  }
+}
+@keyframes deslizamentoVolta {
+ from {
+  left: 52%;
+ } 
+ to {
+  left: 0;
+ }
 }
