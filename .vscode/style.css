@@ -32,8 +32,9 @@ body {
   /*todas as características do fundo; escritas acima; foram abreviadas em uma única linha*/
   background: var(--fundo) no-repeat top center/cover;
   /*esse tipo de propriedade é chamada de "atalho" ou "short-hand"*/
-
   /* "var" é variável; veja que em :root e em .branco foram criadas variáveis*/
+
+  height: 100vh;/*100% da viewport height; na viewport(tela) vai cobrir 100% da altura da tela*/
 }
 
 body {
@@ -163,4 +164,13 @@ ul li a:hover {
 footer {
   padding: 24px 0;
   text-align: center;
+}
+
+@media (min-width: 700px) { /*quando a largura mínima for de 700px, a variável fundo vai alterar para os novos fundos abaixo*/
+  :root {
+    --fundo: url(./assets/bg-desktop.jpg);
+  }
+  .branco {
+   --fundo: url(./assets/bg-desktop-light.jpg);
+  }
 }
