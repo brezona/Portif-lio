@@ -46,7 +46,7 @@ body {
   width: 100%; /*o conteúdo vai cobrir a largura máxima da tela, até o lime máximo abaixo, de 588 pixels*/
   max-width: 588px;
   margin: 56px auto; /*coloca 56px de espaçamento no topo*/ /*centraliza o "Conteudo"no centro da tela; "auto"maticamente ele faz um calculo e faz as margens laterais na mesma medida/distancia*/
-  padding: 0 24px; /*do espaço do width, 24 pixels são dos ptrrenchimentos laterais*/
+  padding: 0 24px; /*do espaço do width, 24 pixels são dos preenchimentos laterais*/
 }
 
 #perfil {
@@ -58,7 +58,7 @@ body {
 
   display: block; /*display em inglês é mostrar*/
   margin: auto;
-  /*faz a img ;que é um obj inline(em linha); ser block (quadrado); o display block fará a imagem ser lida como se estivesse num quadrado; e por isso, pode ser centralizado com "auto"*/
+  /*faz a img; que é um obj inline(em linha); ser block (quadrado); o display block fará a imagem ser lida como se estivesse num quadrado; e por isso, pode ser centralizado com "auto"*/
 }
 
 #perfil p {
