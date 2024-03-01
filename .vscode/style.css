@@ -33,7 +33,7 @@ body {
   background: var(--fundo) no-repeat top center/cover;
   /*esse tipo de propriedade é chamada de "atalho" ou "short-hand"*/
   /* "var" é variável; veja que em :root e em .branco foram criadas variáveis*/
-
+  
   height: 100vh;/*100% da viewport height; na viewport(tela) vai cobrir 100% da altura da tela*/
 }
 
