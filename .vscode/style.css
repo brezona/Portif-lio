@@ -113,7 +113,7 @@ body {
 }
 
 ul {
-  list-style: none; /*tira as características da lista, omo pontos e números*/
+  list-style: none; /*tira as características da lista, como pontos e números*/
   display: flex;
   flex-direction: column; /*coloca a lista em coluna*/
   gap: 16px; /*gap é o "espaçamento entre" as listas*/
